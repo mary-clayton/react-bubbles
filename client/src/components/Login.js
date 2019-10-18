@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { axiosWithAuth } from "../utils/AxiosWithAuth";
 import styled from 'styled-components'
-import image from './img/bubbles.jpg'
+
 
 const LoginStyle = styled.div `
 display: flex;

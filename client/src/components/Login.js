@@ -1,11 +1,13 @@
 import React, {useState} from "react";
 import { axiosWithAuth } from "../utils/AxiosWithAuth";
 import styled from 'styled-components'
+import image from './img/bubbles.jpg'
 
 const LoginStyle = styled.div `
 display: flex;
 flex-flow: column;
 margin:  5% 0 0 50%;
+
 h1 {
     margin-bottom: 3%;
     color: lightpink;
@@ -63,7 +65,8 @@ const Login = props => {
     .catch(err => console.log(err));
   }
   return (
-    <LoginStyle>
+    <div className="login">
+    <LoginStyle className="loginpage">
       <h1>Welcome to the Bubble App!</h1>
       <form onSubmit={handleLogin}>
     <label>Username:</label>
@@ -83,6 +86,7 @@ const Login = props => {
                      <button>Log in</button>
       </form>
     </LoginStyle>
+    </div>
   );
 };
 
